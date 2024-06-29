@@ -35,8 +35,10 @@ This project is a Spring Boot application designed to simulate a retail store. I
 
 ### Prerequisites
 
-- Java 8 or higher
-- Maven 3.6.3 or higher
+- Java 17 or higher
+- Spring Boot 3.3.1
+- Maven 
+
 
 ### Maven Install
 
@@ -50,14 +52,14 @@ This project is a Spring Boot application designed to simulate a retail store. I
    mvn clean install
    ```
 
-#### To generate Jacoco code coverage report use test Maven, 
+### To generate Jacoco code coverage report use test Maven, 
 - HTML Report Generated in target\site\jacoco\index.html
 
-```bash
+    ```bash
    mvn test
-```
+    ```
 
-##### To Generating SonarQube
+### To Generating SonarQube
 
 ### Prerequisites
 
