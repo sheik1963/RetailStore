@@ -20,13 +20,13 @@ This project is a Spring Boot application designed to simulate a retail store. I
 - **User**: Represents a user in the system.
 - **Product**: Represents a products.
 
-##Controller
+## Controller
 - **BillController** : Recevice post request from user for bill generation.
 
-##Service
+## Service
 - **BillService** : Calculate the discount based on user type. 
 
-##Code Coverage
+## Code Coverage
 - 100% Code Coverage for business logic BillService
 
 
@@ -38,9 +38,9 @@ This project is a Spring Boot application designed to simulate a retail store. I
 - Java 8 or higher
 - Maven 3.6.3 or higher
 
-###Maven Install
+### Maven Install
 
-####To build and install the project using Maven, follow these steps:
+**To build and install the project using Maven, follow these steps:**
 
 1. Open a terminal or command prompt.
 2. Navigate to the root directory of the project where `pom.xml` is located.
@@ -50,14 +50,14 @@ This project is a Spring Boot application designed to simulate a retail store. I
    mvn clean install
    ```
 
-####To generate Jacoco code coverage report use test Maven, 
+#### To generate Jacoco code coverage report use test Maven, 
 - HTML Report Generated in target\site\jacoco\index.html
 
 ```bash
    mvn test
 ```
 
-#####To Generating SonarQube
+##### To Generating SonarQube
 
 ### Prerequisites
 
@@ -72,7 +72,7 @@ This project is a Spring Boot application designed to simulate a retail store. I
    mvn sonar:sonar 
    ```
 
-###Running the Application
+### Running the Application
 - Use Maven to run the Spring Boot application
 - Application URL http://localhost:8082/
 
@@ -80,7 +80,7 @@ This project is a Spring Boot application designed to simulate a retail store. I
    mvn spring-boot:run
     ```
 
-###API Reqeust & EndPoint
+### API Reqeust & EndPoint
 
 1.Discount calculated by userType for non groscries items
    - employee(30% Discount)
@@ -114,6 +114,6 @@ This project is a Spring Boot application designed to simulate a retail store. I
         }
 
 
-###UML Diagarm
-- **FlowChart & Sequence Diagram** avaliable in resource\uml folder
+### UML Diagram
+- **FlowChart & Sequence Diagram** available in resource\uml folder
 
