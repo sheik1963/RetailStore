@@ -23,6 +23,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+/**
+ * This class represents http request from user for billing
+ *
+ * @author  Sheik Abdulla
+ * @since 1.0
+ * @version 1.0
+ *
+ */
+
 @RestController
 @RequestMapping("/generate")
 public class BillController {
@@ -31,6 +40,13 @@ public class BillController {
     BillService billService;
 
     @PostMapping("/bill")
+
+    /**
+     * This http post method generate bill for user.
+     *
+     * @param user - user & shopping cart
+     *
+     */
 
     ResponseEntity<Object>  generateBill(@RequestBody  User user) {
 

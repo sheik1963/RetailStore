@@ -12,8 +12,27 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * This class represents a business logic calcutation for billing to user
+ *
+ * @author  Sheik Abdulla
+ * @since 1.0
+ * @version 1.0
+ *
+ */
+
 @Service
 public class BillServiceImpl implements BillService{
+
+    /**
+     * This method generate bill for user.
+     *
+     * @param user - user & shopping cart
+     * @return User - calculated discount and amount payable
+     * @throws InvaildUserException if user id or user type is empty or null
+     * @throws CartIsEmptyException if shopping card  is empty or null
+     *
+     */
 
     @Override
     public User generateBill(User user) {
@@ -36,6 +55,11 @@ public class BillServiceImpl implements BillService{
 
     }
 
+    /**
+     * This method calculate discount for user ,flat 5% discount & netpayable amount.
+     *
+     * @param user - user & shopping cart
+     */
     private void amountPayable(User user){
 
         BigDecimal total=user.getShoppingCart().stream().map(product -> product.getAmount().multiply(BigDecimal.valueOf(product.getUnit())))
